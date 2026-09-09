@@ -2,35 +2,43 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#120c18"><title>6 Months With You ♡</title>
+<meta name="theme-color" content="#f58faf"><title>Happy 6 Months, Naya ♡</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,500&display=swap');
-:root{--ink:#fdf8f2;--muted:#cbbfca;--pink:#ff6f91;--soft:#ffc2d1;--dark:#120c18}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(circle at 15% 20%,#96376447,transparent 28rem),radial-gradient(circle at 85% 80%,#67429640,transparent 28rem),var(--dark);font-family:"DM Mono",monospace;overflow-x:hidden}
-button{font:inherit}.gate{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:24px;background:#0d0912;transition:.8s}.gate.open{opacity:0;visibility:hidden}.gate-content{text-align:center}.tiny{margin:0 0 22px;color:#a698aa;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
-.enter{min-width:174px;padding:16px 28px;color:var(--ink);border:1px solid #ffffff8c;border-radius:999px;background:transparent;letter-spacing:.18em;cursor:pointer;transition:.25s}.enter:hover,.enter:focus-visible{color:#24101a;background:var(--soft);box-shadow:0 0 40px #ff6f914d;transform:translateY(-3px);outline:0}
-main{min-height:100vh;display:grid;place-items:center;padding:52px 20px;opacity:0;transform:translateY(16px);transition:opacity 1s .25s,transform 1s .25s}main.visible{opacity:1;transform:none}.card{width:min(720px,100%);padding:clamp(28px,6vw,64px);border:1px solid #ffffff21;border-radius:28px;background:#ffffff13;box-shadow:0 30px 90px #00000059;backdrop-filter:blur(16px);text-align:center}
-.terminal{display:inline-flex;gap:8px;align-items:center;margin-bottom:34px;color:#a99dad;font-size:.74rem}.dot{width:7px;height:7px;border-radius:50%;background:var(--pink);box-shadow:0 0 12px var(--pink)}.eyebrow{color:var(--soft);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
-h1{margin:14px 0 24px;font-family:"Playfair Display",serif;font-size:clamp(2.8rem,10vw,6rem);font-weight:600;line-height:.92;letter-spacing:-.045em}h1 em{color:var(--pink);font-weight:500}.message{max-width:560px;margin:auto;color:var(--muted);font-family:system-ui,sans-serif;font-size:clamp(.98rem,2.6vw,1.12rem);line-height:1.85}.message strong{color:var(--ink)}
-.code-love{margin:34px auto 0;padding:17px 20px;border:1px solid #ffc2d129;border-radius:15px;background:#08050c73;color:#d5cbd7;font-size:clamp(.7rem,2.3vw,.82rem);text-align:left;overflow-x:auto}.key{color:#cda7ff}.str{color:#ff9db5}.signature{margin:34px 0 0;color:#aea1b1;font-size:.76rem;line-height:1.7}.signature span{color:var(--ink)}
-.heart{position:fixed;bottom:-30px;z-index:-1;color:var(--soft);pointer-events:none;animation:floatUp linear forwards;opacity:0}@keyframes floatUp{0%{transform:translateY(0);opacity:0}15%{opacity:.45}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Italiana&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+:root{--rose:#f45d87;--blush:#ffc1d2;--cream:#fff8f4;--wine:#64243d;--ink:#4b2133}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Plus Jakarta Sans",sans-serif;background:#f78eae;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:-3;background:linear-gradient(135deg,#ffb3c8,#f978a0 45%,#ffd0dc);background-size:300% 300%;animation:bgmove 12s ease infinite}
+.bg:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 20%,#fff8 0 3px,transparent 4px),radial-gradient(circle at 80% 30%,#fff6 0 2px,transparent 3px);background-size:80px 80px,110px 110px;opacity:.35}
+@keyframes bgmove{50%{background-position:100% 100%}}
+.gate{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 50% 40%,#ffb1c7,#e95d87);transition:opacity 1s,visibility 1s}.gate.hide{opacity:0;visibility:hidden}.gate-inner{text-align:center;color:white}.mini{font-family:"DM Mono";font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;opacity:.8}.gate h1{font:400 clamp(4rem,20vw,9rem)/.8 "Italiana";margin:20px 0 28px}.enter{border:1px solid #fff9;border-radius:999px;padding:15px 28px;background:#fff;color:var(--wine);font:500 .78rem "DM Mono";letter-spacing:.16em;box-shadow:0 12px 40px #9d244653;cursor:pointer;transition:.3s}.enter:hover{transform:translateY(-4px) scale(1.03)}
+.music{position:fixed;right:18px;top:18px;z-index:10;width:43px;height:43px;border:1px solid #fff8;border-radius:50%;background:#ffffffc9;color:var(--wine);box-shadow:0 8px 24px #8424452b;cursor:pointer;opacity:0;transition:.5s}.music.show{opacity:1}.music.playing{animation:pulse 1.8s infinite}@keyframes pulse{50%{box-shadow:0 0 0 9px #fff3}}
+main{opacity:0;transform:translateY(20px);transition:1s .35s}main.show{opacity:1;transform:none}.hero{min-height:100svh;display:grid;place-items:center;padding:80px 22px 50px;text-align:center;color:white}.hero-inner{max-width:820px}.label{font:500 .7rem "DM Mono";letter-spacing:.18em;text-transform:uppercase}.hero h2{margin:22px 0;font:400 clamp(3.5rem,14vw,8.4rem)/.83 "Italiana";letter-spacing:-.04em}.hero h2 i{display:block;color:var(--cream);font-weight:400}.sub{max-width:520px;margin:auto;font-size:clamp(.93rem,3vw,1.08rem);line-height:1.8;color:#fffdf7}.scroll{display:inline-block;margin-top:38px;color:white;text-decoration:none;font:500 .67rem "DM Mono";letter-spacing:.15em;animation:bob 2s infinite}@keyframes bob{50%{transform:translateY(7px)}}
+.memories{min-height:100vh;padding:75px 18px 95px;background:linear-gradient(#fff6f8,#ffe6ed);border-radius:40px 40px 0 0}.section-head{text-align:center;max-width:650px;margin:0 auto 40px}.section-head span{font:.68rem "DM Mono";letter-spacing:.16em;color:var(--rose)}.section-head h3{font:400 clamp(2.6rem,10vw,5.4rem)/.95 "Italiana";margin:12px 0;color:var(--wine)}.section-head p{font-family:"DM Mono";font-size:.75rem;color:#9d5b72}
+.photo-wrap{position:relative;width:min(760px,100%);margin:auto}.photo-wrap:before,.photo-wrap:after{content:"♡";position:absolute;color:var(--rose);font-size:clamp(2rem,8vw,5rem);z-index:2;animation:float 3s ease-in-out infinite}.photo-wrap:before{left:-15px;top:8%}.photo-wrap:after{right:-8px;bottom:8%;animation-delay:-1.5s}@keyframes float{50%{transform:translateY(-12px) rotate(8deg)}}.photo{display:block;width:100%;border-radius:24px;box-shadow:0 28px 70px #99294738;transform:rotate(-1deg);transition:.6s}.photo:hover{transform:rotate(0) scale(1.012)}
+.letter{position:relative;width:min(680px,calc(100% - 36px));margin:-25px auto 0;padding:clamp(32px,7vw,62px);background:#fffaf5;border:1px solid #e8bdc7;border-radius:8px;box-shadow:0 22px 60px #8e345b24;text-align:center;transform:rotate(.5deg)}.tape{position:absolute;width:95px;height:25px;left:50%;top:-13px;transform:translateX(-50%) rotate(-3deg);background:#ef9cb0a6}.letter .date{font:.68rem "DM Mono";letter-spacing:.15em;color:var(--rose)}.letter h4{font:400 clamp(2.5rem,9vw,5.2rem)/.95 "Italiana";margin:18px 0;color:var(--wine)}.letter p{font:400 clamp(1rem,3.2vw,1.2rem)/1.9 Georgia,serif;color:#704255}.letter .code{margin-top:28px;font:.72rem/1.7 "DM Mono";color:#a45170}.footer{text-align:center;padding:60px 20px 75px;color:white}.footer b{display:block;font:400 clamp(2rem,8vw,4rem) "Italiana";margin-bottom:12px}.footer small{font:.65rem "DM Mono";letter-spacing:.12em}
+.heart{position:fixed;bottom:-50px;z-index:-1;color:#fff9;pointer-events:none;animation:rise linear forwards}@keyframes rise{to{transform:translateY(-120vh) rotate(80deg);opacity:0}}
+@media(max-width:560px){.memories{border-radius:28px 28px 0 0}.photo{border-radius:18px}.music{right:12px;top:12px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-<section class="gate" id="gate"><div class="gate-content"><p class="tiny">a little surprise is waiting</p><button class="enter" id="enter">ENTER ♡</button></div></section>
-<main id="surprise"><article class="card">
-<div class="terminal"><span class="dot"></span> love.exe is running perfectly</div>
-<p class="eyebrow">8 September • our 6th month</p>
-<h1>Half a year<br><em>with you.</em></h1>
-<p class="message">Selamat 6 bulan, <strong>sayangku</strong>. Makasih udah jadi bagian paling manis dari hari-hariku—tempat aku pulang, cerita, ketawa, dan kadang jadi manusia paling random sedunia.<br><br>Enam bulan mungkin belum lama, tapi cukup buat aku yakin kalau ketemu kamu adalah <strong>best update</strong> dalam hidupku. Semoga kita terus tumbuh, saling jaga, dan bikin lebih banyak memori lucu bareng. Aku sayang kamu, hari ini dan seterusnya. ♡</p>
-<pre class="code-love"><code><span class="key">while</span> (aku.masihHidup) {
-  aku.sayangi(<span class="str">"kamu"</span>);
-  kita.bahagia++;
-}</code></pre>
-<p class="signature">compiled with love by<br><span>pacarmu yang paling ganteng (katanya)</span></p>
-</article></main>
+<div class="bg"></div>
+<section class="gate" id="gate"><div class="gate-inner"><p class="mini">a tiny love letter for naya</p><h1>♡</h1><button class="enter" id="enter">ENTER, SAYANG</button></div></section>
+<button class="music" id="music" aria-label="Nyalakan atau matikan musik">♫</button>
+<main id="main">
+<section class="hero"><div class="hero-inner"><p class="label">08 • our little milestone • 06 months</p><h2>Selamat tanggal 8,<i>sayang.</i></h2><p class="sub">Happy 6 months, Naya ♡<br>Enam bulan bersamamu, dan rasanya aku masih ingin memilihmu berulang kali.</p><a class="scroll" href="#memories">OUR MEMORIES ↓</a></div></section>
+<section class="memories" id="memories"><div class="section-head"><span>OUR FAVOURITE FRAMES</span><h3>A little life<br>we made together.</h3><p>four moments, countless reasons to smile.</p></div><div class="photo-wrap"><img class="photo" src="assets/memories.png" alt="Kolase kenangan kita"></div></section>
+<section class="letter"><div class="tape"></div><span class="date">FOR NAYA • WITH ALL MY HEART</span><h4>Selamat,<br>dirimu akan abadi<br>dalam syairku.</h4><p>Terima kasih sudah hadir dan membuat hari-hariku terasa lebih hidup. Semoga ini baru enam bulan pertama dari begitu banyak cerita yang akan kita tulis berdua.</p><div class="code">while (aku.masihHidup) {<br>&nbsp;&nbsp;aku.sayangi("Naya");<br>&nbsp;&nbsp;kita.bahagia++;<br>}</div></section>
+<footer class="footer"><b>Happy half a year, Naya.</b><small>COMPILED WITH LOVE BY YOUR FAVOURITE IT GUY ♡</small></footer>
+</main>
 <script>
-const gate=document.querySelector('#gate'),enter=document.querySelector('#enter'),surprise=document.querySelector('#surprise');
-enter.addEventListener('click',()=>{gate.classList.add('open');surprise.classList.add('visible');document.title='6 Months With You ♡';for(let i=0;i<24;i++)setTimeout(()=>{const h=document.createElement('span');h.className='heart';h.textContent=Math.random()>.5?'♡':'♥';h.style.left=Math.random()*100+'vw';h.style.fontSize=12+Math.random()*18+'px';h.style.animationDuration=5+Math.random()*5+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),10000)},i*120)});
-</script>
-</body></html>
+const gate=document.querySelector('#gate'),main=document.querySelector('#main'),music=document.querySelector('#music');let ctx,playing=false,timer;
+function hearts(){setInterval(()=>{const h=document.createElement('i');h.className='heart';h.textContent=Math.random()>.45?'♡':'♥';h.style.left=Math.random()*100+'vw';h.style.fontSize=12+Math.random()*25+'px';h.style.animationDuration=6+Math.random()*7+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),14000)},420)}
+function note(freq,start,dur,gain=.035){const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(0,start);g.gain.linearRampToValueAtTime(gain,start+.08);g.gain.exponentialRampToValueAtTime(.001,start+dur);o.connect(g).connect(ctx.destination);o.start(start);o.stop(start+dur)}
+const chords=[[261.63,329.63,392],[220,261.63,329.63],[174.61,220,261.63],[196,246.94,293.66]];
+function jazz(){if(!playing)return;const t=ctx.currentTime+.05;chords.forEach((c,i)=>c.forEach((n,j)=>note(n,t+i*1.4,1.25,j?0.022:0.032)));timer=setTimeout(jazz,5600)}
+function startMusic(){if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();playing=true;music.classList.add('playing');music.textContent='♪';jazz()}
+function stopMusic(){playing=false;clearTimeout(timer);music.classList.remove('playing');music.textContent='♫'}
+document.querySelector('#enter').onclick=()=>{gate.classList.add('hide');main.classList.add('show');music.classList.add('show');startMusic();hearts()};
+music.onclick=()=>playing?stopMusic():startMusic();
+</script></body></html>
