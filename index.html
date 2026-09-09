@@ -25,6 +25,7 @@ main{opacity:0;transform:translateY(20px);transition:1s .35s}main.show{opacity:1
 <div class="bg"></div>
 <section class="gate" id="gate"><div class="gate-inner"><p class="mini">Hmmm....Hai, Hellow</p><h1>♡</h1><button class="enter" id="enter">CLICK ME</button></div></section>
 <button class="music" id="music" aria-label="Nyalakan atau matikan musik">♫</button>
+<audio id="song" src="assets/music.mp3" preload="auto" loop></audio>
 <main id="main">
 <section class="hero"><div class="hero-inner"><p class="label">08 • our little milestone • 06 months</p><h2>Selamat tanggal 8,<i>sayang.</i></h2><p class="sub">Happy 6 months, Naya ♡<br>Hmmm, ga kerasa ya nay sudah 6 bulan hubungan ini berlayar. Maafin aku yang masih dalam tahap proses, mari kita jelajahi dunia ini bersama dan temani aku dalam prosesnya sampai tamat sayang. Masih banyak kekurangan yang harus kuperbaiki, terimakasih karena sudah hadir dalam hidupku naya, aku ingin kamu selalu ada dihidupku I Love you Jelita.</p><a class="scroll" href="#memories">WELCOME ↓</a></div></section>
 <section class="memories" id="memories"><div class="section-head"><span>BEBERAPA MEMORY INDAH</span><h3>A little life<br>we made together.</h3><p>four moments, countless reasons to smile.</p></div><div class="photo-wrap"><img class="photo" src="assets/memories.png" alt="Kolase kenangan kita"></div></section>
@@ -32,13 +33,10 @@ main{opacity:0;transform:translateY(20px);transition:1s .35s}main.show{opacity:1
 <footer class="footer"><b>Happy half a year, Naya.</b><small>COMPILED WITH LOVE BY YOUR FAVOURITE IT BOY ♡</small></footer>
 </main>
 <script>
-const gate=document.querySelector('#gate'),main=document.querySelector('#main'),music=document.querySelector('#music');let ctx,playing=false,timer;
+const gate=document.querySelector('#gate'),main=document.querySelector('#main'),music=document.querySelector('#music'),song=document.querySelector('#song');
 function hearts(){setInterval(()=>{const h=document.createElement('i');h.className='heart';h.textContent=Math.random()>.45?'♡':'♥';h.style.left=Math.random()*100+'vw';h.style.fontSize=12+Math.random()*25+'px';h.style.animationDuration=6+Math.random()*7+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),14000)},420)}
-function note(freq,start,dur,gain=.035){const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(0,start);g.gain.linearRampToValueAtTime(gain,start+.08);g.gain.exponentialRampToValueAtTime(.001,start+dur);o.connect(g).connect(ctx.destination);o.start(start);o.stop(start+dur)}
-const chords=[[261.63,329.63,392],[220,261.63,329.63],[174.61,220,261.63],[196,246.94,293.66]];
-function jazz(){if(!playing)return;const t=ctx.currentTime+.05;chords.forEach((c,i)=>c.forEach((n,j)=>note(n,t+i*1.4,1.25,j?0.022:0.032)));timer=setTimeout(jazz,5600)}
-function startMusic(){if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();playing=true;music.classList.add('playing');music.textContent='♪';jazz()}
-function stopMusic(){playing=false;clearTimeout(timer);music.classList.remove('playing');music.textContent='♫'}
-document.querySelector('#enter').onclick=()=>{gate.classList.add('hide');main.classList.add('show');music.classList.add('show');startMusic();hearts()};
-music.onclick=()=>playing?stopMusic():startMusic();
+async function playSong(){try{song.volume=.38;await song.play();music.classList.add('playing');music.textContent='♪'}catch(e){music.textContent='♫'}}
+function pauseSong(){song.pause();music.classList.remove('playing');music.textContent='♫'}
+document.querySelector('#enter').onclick=()=>{gate.classList.add('hide');main.classList.add('show');music.classList.add('show');playSong();hearts()};
+music.onclick=()=>song.paused?playSong():pauseSong();
 </script></body></html>
